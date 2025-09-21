@@ -1,0 +1,32 @@
+# ------------------------------------
+# 1. Environment & Dependencies
+# ------------------------------------
+# Virtual Environment folders (DO NOT COMMIT!)
+venv/
+env/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.egg
+*.whl
+
+# ------------------------------------
+# 2. IDE and Notebook Specifics
+# ------------------------------------
+# Jupyter/VS Code Checkpoints
+.ipynb_checkpoints/
+
+# VS Code directory
+.vscode/
+
+# ------------------------------------
+# 3. Data & Temporary Outputs
+# ------------------------------------
+# Local raw data (if downloaded to a temporary location)
+# The actual heart_disease.csv in data/ is small enough to commit, 
+# but this line is good practice for large data files.
+# data/
+
+# Temporary run logs
+*.log
