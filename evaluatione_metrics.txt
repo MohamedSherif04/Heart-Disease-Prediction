@@ -1,0 +1,35 @@
+# Comprehensive Machine Learning Pipeline: Heart Disease Prediction
+# Final Model Performance and Project Metrics
+
+# ----------------------------------------------------
+# 1. Dimensionality Reduction Summary (PCA)
+# ----------------------------------------------------
+Technique Used: Principal Component Analysis (PCA)
+Variance Threshold: 95%
+Original Feature Count: 22
+Reduced Component Count: 13
+
+# ----------------------------------------------------
+# 2. Baseline Model Performance (Random Forest Classifier)
+#    (Metrics calculated on the 20% test set, using PCA components)
+# ----------------------------------------------------
+Model: Random Forest Classifier (Baseline)
+Accuracy: 0.8833
+F1-Score: 0.8511
+AUC Score: 0.9647
+
+# ----------------------------------------------------
+# 3. Optimized Model Performance (Hyperparameter Tuned)
+# ----------------------------------------------------
+Model: Random Forest Classifier (Optimized)
+Tuning Method: GridSearchCV
+Best Hyperparameters: {'max_depth': 5, 'n_estimators': 100}
+Best Cross-Validation Score (Accuracy): 0.7975
+Test Set Accuracy (Optimized Model): 0.8833
+
+# ----------------------------------------------------
+# 4. K-Means Clustering Result Insight
+# ----------------------------------------------------
+Model: K-Means Clustering
+Optimal K (based on Elbow Method): 2
+Clustering Insight: Cluster 0 primarily contains patients without heart disease (126 vs 36), and Cluster 1 primarily contains patients with heart disease (34 vs 101).
